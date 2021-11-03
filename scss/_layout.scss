@@ -1,0 +1,41 @@
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 0.23fr 0.385fr 0.385fr;
+	grid-template-rows: 0.3fr 1.7fr 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"header header header"
+		"sidebar content content"
+		"sidebar content content";
+}
+
+.logo {
+	grid-area: 1 / 1 / 2 / 2;
+}
+
+.sidebar {
+	//background: #000;
+	grid-area: sidebar;
+}
+
+.header {
+	//background: #a0a0a0;
+	grid-area: header;
+}
+
+.content {
+	//background: #dfdfdf;
+	grid-area: content;
+}
+
+
+.book-grid {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	padding: 0px;
+}

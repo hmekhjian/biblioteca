@@ -1,0 +1,35 @@
+.book-cover {
+    display: block;
+    position: relative;
+    width: 220px;
+    height: 320px;
+    max-height: 320px;
+    
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px 10px 10px 0px;
+        margin: auto;
+        
+        
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 5px;
+        bottom: 0;
+        width: 4px;
+        background: rgba(88, 88, 88, 0.06);
+        box-shadow: 1px 0 3px rgba(255, 255, 255, 0.836);
+    }
+}
+
+.book-title {
+    margin-top: 0.5em;
+}
+
+.book-author {
+    margin-top: 2em;
+}
